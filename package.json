@@ -1,0 +1,56 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "whois-lookup",
+  "title": "WHOIS Lookup",
+  "description": "Look up WHOIS records for a domain using the who.is API",
+  "icon": "icon.png",
+  "author": "rmjh",
+  "categories": [
+    "Developer Tools",
+    "Web"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "whois",
+      "title": "WHOIS",
+      "subtitle": "who.is",
+      "description": "Look up the WHOIS record for a domain. Enable as a fallback command to type \"whois example.com\" directly.",
+      "mode": "view"
+    },
+    {
+      "name": "dns",
+      "title": "DNS Records",
+      "subtitle": "who.is",
+      "description": "Look up a domain's current DNS records. Enable as a fallback command to type \"dns example.com\" directly.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "apiKey",
+      "title": "who.is API Key",
+      "description": "Create one at https://who.is/account/api (starts with wis_live_)",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.6.0",
+    "@raycast/utils": "^2.3.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "22.19.17",
+    "@types/react": "19.0.10",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.8.0"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
