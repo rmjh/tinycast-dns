@@ -1,6 +1,6 @@
 # Tinycast DNS
 
-A Raycast extension for WHOIS and DNS lookups using the [who.is API](https://who.is/docs/api).
+A Raycast/Tinycast extension for WHOIS and DNS lookups using the [who.is API](https://who.is/docs/api).
 
 ## Setup
 
